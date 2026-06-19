@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "dentapp-design": {
+      "command": "wsl",
+      "args": ["-e", "/home/santo245/.nvm/versions/node/v24.16.0/bin/node", "/home/santo245/dev/dentapp-website/mcp-server/index.js"]
+    }
+  }
+}
