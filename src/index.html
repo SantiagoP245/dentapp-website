@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DentApp — software de gestión dental para clínicas pequeñas. Organice pacientes, turnos y facturación en un solo lugar." />
+  <title>DentApp — Gestión dental simplificada</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header role="banner">
+    <nav class="nav" aria-label="Navegación principal">
+      <div class="nav__inner">
+
+        <!-- Logo -->
+        <a href="#inicio" class="nav__logo" aria-label="DentApp — ir al inicio">
+          <span class="nav__logo-dent">Dent</span><span class="nav__logo-app">App</span>
+        </a>
+
+        <!-- Desktop links -->
+        <ul class="nav__links" role="list">
+          <li><a href="#funciones" class="nav__link">Funciones</a></li>
+          <li><a href="#demo"      class="nav__link">Demo</a></li>
+          <li><a href="#precios"   class="nav__link">Precios</a></li>
+          <li><a href="#preguntas" class="nav__link">Preguntas</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <a href="#comenzar" class="nav__cta">Comenzar gratis</a>
+
+        <!-- Hamburger (mobile) -->
+        <button
+          class="nav__hamburger"
+          aria-expanded="false"
+          aria-controls="nav-mobile"
+          aria-label="Abrir menú"
+        >
+          <span class="nav__hamburger-bar"></span>
+          <span class="nav__hamburger-bar"></span>
+          <span class="nav__hamburger-bar"></span>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="nav__mobile" id="nav-mobile" role="dialog" aria-label="Menú de navegación">
+        <ul class="nav__mobile-links" role="list">
+          <li><a href="#funciones" class="nav__mobile-link">Funciones</a></li>
+          <li><a href="#demo"      class="nav__mobile-link">Demo</a></li>
+          <li><a href="#precios"   class="nav__mobile-link">Precios</a></li>
+          <li><a href="#preguntas" class="nav__mobile-link">Preguntas</a></li>
+        </ul>
+        <a href="#comenzar" class="nav__mobile-cta">Comenzar gratis</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <main id="inicio">
+    <section class="hero" aria-labelledby="hero-headline">
+      <div class="hero__inner">
+
+        <!-- Content -->
+        <div class="hero__content">
+          <h1 class="hero__headline" id="hero-headline">
+            La gestión de su clínica,<br>
+            <span class="hero__headline-accent">simplificada.</span>
+          </h1>
+          <p class="hero__subtitle">
+            DentApp organiza sus pacientes, turnos y facturación en un solo lugar.
+            Sin complicaciones.
+          </p>
+          <div class="hero__actions">
+            <a href="#comenzar" class="btn--primary">Comenzar gratis</a>
+            <a href="#demo"     class="btn--outline">Ver cómo funciona</a>
+          </div>
+        </div>
+
+        <!-- Visual: CSS-only dashboard mock -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__dashboard">
+            <div class="hero__dashboard-sidenav">
+              <div class="hero__dashboard-navitem"></div>
+              <div class="hero__dashboard-navitem"></div>
+              <div class="hero__dashboard-navitem"></div>
+              <div class="hero__dashboard-navitem"></div>
+              <div class="hero__dashboard-navitem"></div>
+            </div>
+            <div class="hero__dashboard-rows">
+              <div class="hero__dashboard-row"></div>
+              <div class="hero__dashboard-row"></div>
+              <div class="hero__dashboard-row"></div>
+              <div class="hero__dashboard-row"></div>
+              <div class="hero__dashboard-row"></div>
+              <div class="hero__dashboard-row"></div>
+              <div class="hero__dashboard-row"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/nav.js"></script>
+</body>
+</html>

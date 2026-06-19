@@ -1,0 +1,86 @@
+:root {
+  /* Color — brand */
+  --color-brand-red:        #CC0000;
+  --color-brand-red-dark:   #A30000;
+  --color-brand-red-light:  #E60000;
+  --color-brand-black:      #111111;
+
+  /* Color — neutrals */
+  --color-white:            #FFFFFF;
+  --color-gray-50:          #F9FAFB;
+  --color-gray-100:         #F3F4F6;
+  --color-gray-200:         #E5E7EB;
+  --color-gray-400:         #9CA3AF;
+  --color-gray-600:         #4B5563;
+  --color-gray-800:         #1F2937;
+  --color-gray-900:         #111827;
+
+  /* Color — dashboard mock */
+  --color-dash-grad-start:  #CC0000;
+  --color-dash-grad-mid:    #8B0000;
+  --color-dash-grad-end:    #3D0000;
+
+  /* Typography — families */
+  --font-sans:  'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Typography — scale */
+  --text-xs:    0.75rem;
+  --text-sm:    0.875rem;
+  --text-base:  1rem;
+  --text-lg:    1.125rem;
+  --text-xl:    1.25rem;
+  --text-2xl:   1.5rem;
+  --text-3xl:   1.875rem;
+  --text-4xl:   2.25rem;
+  --text-5xl:   3rem;
+
+  /* Typography — weight */
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semibold: 600;
+  --weight-bold:    700;
+
+  /* Typography — line height */
+  --leading-tight:  1.2;
+  --leading-snug:   1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+
+  /* Spacing */
+  --space-1:   0.25rem;
+  --space-2:   0.5rem;
+  --space-3:   0.75rem;
+  --space-4:   1rem;
+  --space-5:   1.25rem;
+  --space-6:   1.5rem;
+  --space-8:   2rem;
+  --space-10:  2.5rem;
+  --space-12:  3rem;
+  --space-16:  4rem;
+  --space-20:  5rem;
+  --space-24:  6rem;
+  --space-32:  8rem;
+
+  /* Border radius */
+  --radius-sm:   0.25rem;
+  --radius-md:   0.5rem;
+  --radius-lg:   1rem;
+  --radius-xl:   1.5rem;
+  --radius-2xl:  2rem;
+  --radius-full: 9999px;
+
+  /* Shadow */
+  --shadow-sm:  0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md:  0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg:  0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl:  0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms ease;
+
+  /* Layout */
+  --container-max:  1200px;
+  --nav-height:     68px;
+}
