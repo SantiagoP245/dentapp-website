@@ -3,7 +3,7 @@
 Landing page de DentApp, software de gestión dental para clínicas pequeñas.
 
 ## Demo video
-[![DentApp Demo](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID)
+[![DentApp Demo](https://cdn.loom.com/sessions/thumbnails/LOOM_ID-with-play.gif)](https://www.loom.com/share/e4ad9a5ad62546f8a4d8ab2ba41aca74)
 
 > 3 minutos: MCP server, prompts y skill en uso real.
 
