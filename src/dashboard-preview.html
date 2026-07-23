@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DentApp — Vista previa del panel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <div class="dashboard-preview">
+
+    <header class="dashboard-preview__header">
+      <a href="index.html" class="dashboard-preview__logo" aria-label="DentApp — volver al inicio">
+        <span class="dashboard-preview__logo-dent">Dent</span><span class="dashboard-preview__logo-app">App</span>
+      </a>
+      <p class="dashboard-preview__badge">Vista previa con datos de ejemplo — no representa una cuenta real</p>
+      <a href="index.html" class="btn btn--outline">Volver al sitio</a>
+    </header>
+
+    <div class="dashboard-preview__shell">
+
+      <nav class="dashboard-preview__tabs" role="tablist" aria-label="Secciones del panel">
+        <button type="button" class="dashboard-preview__tab is-active" role="tab" aria-selected="true" aria-controls="panel-agenda" id="tab-agenda">Agenda</button>
+        <button type="button" class="dashboard-preview__tab" role="tab" aria-selected="false" aria-controls="panel-pacientes" id="tab-pacientes">Pacientes</button>
+        <button type="button" class="dashboard-preview__tab" role="tab" aria-selected="false" aria-controls="panel-facturacion" id="tab-facturacion">Facturación</button>
+      </nav>
+
+      <section class="dashboard-preview__panel" id="panel-agenda" role="tabpanel" aria-labelledby="tab-agenda">
+        <ul class="dashboard-preview__list" role="list">
+
+          <li class="appointment-row">
+            <div class="appointment-row__time">09:00</div>
+            <div class="appointment-row__info">
+              <p class="appointment-row__patient">Martina Suárez</p>
+              <p class="appointment-row__detail">Control — Dra. González</p>
+            </div>
+            <span class="appointment-row__status appointment-row__status--pending">Pendiente</span>
+            <button type="button" class="appointment-row__action" data-action="toggle-complete">Marcar completado</button>
+          </li>
+
+          <li class="appointment-row">
+            <div class="appointment-row__time">10:30</div>
+            <div class="appointment-row__info">
+              <p class="appointment-row__patient">Joaquín Peralta</p>
+              <p class="appointment-row__detail">Limpieza — Dr. Méndez</p>
+            </div>
+            <span class="appointment-row__status appointment-row__status--pending">Pendiente</span>
+            <button type="button" class="appointment-row__action" data-action="toggle-complete">Marcar completado</button>
+          </li>
+
+          <li class="appointment-row">
+            <div class="appointment-row__time">12:00</div>
+            <div class="appointment-row__info">
+              <p class="appointment-row__patient">Lucía Ferreyra</p>
+              <p class="appointment-row__detail">Endodoncia — Dra. González</p>
+            </div>
+            <span class="appointment-row__status appointment-row__status--done">Completado</span>
+            <button type="button" class="appointment-row__action" data-action="toggle-complete">Marcar pendiente</button>
+          </li>
+
+          <li class="appointment-row">
+            <div class="appointment-row__time">16:15</div>
+            <div class="appointment-row__info">
+              <p class="appointment-row__patient">Ramiro Godoy</p>
+              <p class="appointment-row__detail">Consulta — Dr. Méndez</p>
+            </div>
+            <span class="appointment-row__status appointment-row__status--pending">Pendiente</span>
+            <button type="button" class="appointment-row__action" data-action="toggle-complete">Marcar completado</button>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="dashboard-preview__panel" id="panel-pacientes" role="tabpanel" aria-labelledby="tab-pacientes" hidden>
+        <ul class="dashboard-preview__list" role="list">
+
+          <li class="patient-row">
+            <div class="patient-row__avatar" aria-hidden="true">MS</div>
+            <div class="patient-row__info">
+              <p class="patient-row__name">Martina Suárez</p>
+              <p class="patient-row__detail">Última visita: 12/06/2026 — Control</p>
+            </div>
+          </li>
+
+          <li class="patient-row">
+            <div class="patient-row__avatar" aria-hidden="true">JP</div>
+            <div class="patient-row__info">
+              <p class="patient-row__name">Joaquín Peralta</p>
+              <p class="patient-row__detail">Última visita: 03/05/2026 — Limpieza</p>
+            </div>
+          </li>
+
+          <li class="patient-row">
+            <div class="patient-row__avatar" aria-hidden="true">LF</div>
+            <div class="patient-row__info">
+              <p class="patient-row__name">Lucía Ferreyra</p>
+              <p class="patient-row__detail">Última visita: 20/07/2026 — Endodoncia</p>
+            </div>
+          </li>
+
+          <li class="patient-row">
+            <div class="patient-row__avatar" aria-hidden="true">RG</div>
+            <div class="patient-row__info">
+              <p class="patient-row__name">Ramiro Godoy</p>
+              <p class="patient-row__detail">Última visita: 28/04/2026 — Consulta</p>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="dashboard-preview__panel" id="panel-facturacion" role="tabpanel" aria-labelledby="tab-facturacion" hidden>
+        <div class="dashboard-preview__stats">
+          <div class="stat-card">
+            <p class="stat-card__label">Ingresos del mes</p>
+            <p class="stat-card__value">$1.240.000</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-card__label">Facturas emitidas</p>
+            <p class="stat-card__value">86</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-card__label">Pendiente de cobro</p>
+            <p class="stat-card__value">$85.000</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="dashboard-preview__footer">
+        <a href="index.html" class="btn btn--primary">Comenzar gratis</a>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="scripts/dashboard-preview.js"></script>
+</body>
+</html>
